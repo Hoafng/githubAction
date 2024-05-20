@@ -17,7 +17,16 @@ app.use(express.json());
 app.use('/api/people', people);
 app.use('/login', auth);
 
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+  });
+
 const port = 5000;
-app.listen(port, () => {
-    console.log(`Server is listening on port ${port}`);
-});
+
+if (require.main === module) {
+    app.listen(port, () => {
+      console.log(`Example app listening at http://localhost:${port}`);
+    });
+  }
+  
+  module.exports = app;
