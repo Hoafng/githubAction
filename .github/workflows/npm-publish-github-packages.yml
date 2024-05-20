@@ -27,8 +27,8 @@ jobs:
     - name: Run Tests
       run: npm test
       
-    - name : Build
-      run : npm start
+    - name: Build
+      run: npm run build
       
     - name: Print Success Message
       run: echo "Success"
