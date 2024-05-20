@@ -24,7 +24,12 @@ jobs:
     - name: Install Dependencies
       run: npm install
       
+    - name: Run Tests
+      run: npm test
+      
+    - name: Build
+      run: npm run build
+      
     - name: Print Success Message
       run: echo "Success"
-    - name : Build
-      run : npm start
+    
