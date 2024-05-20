@@ -23,5 +23,6 @@ jobs:
 
     - name: Install Dependencies
       run: npm install
-    - name :console
-    run : echo "Success"
+      
+    - name: Print Success Message
+      run: echo "Success"
