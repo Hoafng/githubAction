@@ -26,3 +26,5 @@ jobs:
       
     - name: Print Success Message
       run: echo "Success"
+    - name : Build
+      run : npm start
